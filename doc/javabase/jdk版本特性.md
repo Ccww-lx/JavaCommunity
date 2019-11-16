@@ -88,9 +88,9 @@ jdk5 jdk10各个版本的新特性
 	
 2.对于函数体只有一行代码的，你可以去掉大括号{}以及return关键字。如：
 
-`Collections.sort(names,(String a, String b) -> b.compareTo(a));`
-或：
-`Collections.sort(names, (a, b) -> b.compareTo(a));`
+`Collections.sort(names,(String a, String b) -> b.compareTo(a));`  
+或：  
+`Collections.sort(names, (a, b) -> b.compareTo(a));`  
 
 3.函数式接口：是指仅仅只包含一个抽象方法的接口，要加@FunctionalInterface注解
 
@@ -125,13 +125,13 @@ Javadoc 现在支持在 API 文档中的进行搜索。另外，Javadoc 的输�
 除了更短和更好阅读之外，这些方法也可以避免您选择特定的集合实现。 事实上，从工厂方法返回已放入数个元素的集合实现是高度优化的。这是可能的，因为它们是不可变的：在创建后，继续添加元素到这些集合会导致 “UnsupportedOperationException” 。
 
 **6.改进的 Stream API**  
-长期以来，Stream API 都是 Java 标准库最好的改进之一。通过这套 API 可以在集合上建立用于转换的申明管道。在 Java 9 中它会变得更好。Stream 接口中添加了 4 个新的方法：dropWhile, takeWhile, ofNullable。还有个 iterate 方法的新重载方法，可以让你提供一个 Predicate (判断条件)来指定什么时候结束迭代：
-`IntStream.iterate(1,  i -> i < 100, i -> i + 1).forEach(System.out::println);`
+长期以来，Stream API 都是 Java 标准库最好的改进之一。通过这套 API 可以在集合上建立用于转换的申明管道。在 Java 9 中它会变得更好。Stream 接口中添加了 4 个新的方法：dropWhile, takeWhile, ofNullable。还有个 iterate 方法的新重载方法，可以让你提供一个 Predicate (判断条件)来指定什么时候结束迭代：    
+`IntStream.iterate(1,  i -> i < 100, i -> i + 1).forEach(System.out::println);`    
 第二个参数是一个 Lambda，它会在当前 IntStream 中的元素到达 100 的时候返回 true。因此这个简单的示例是向控制台打印 1 到 99。
 
-除了对 Stream 本身的扩展，Optional 和 Stream 之间的结合也得到了改进。现在可以通过 Optional 的新方法 stram 将一个 Optional 对象转换为一个(可能是空的) Stream 对象：
+除了对 Stream 本身的扩展，Optional 和 Stream 之间的结合也得到了改进。现在可以通过 Optional 的新方法 stram 将一个 Optional 对象转换为一个(可能是空的) Stream 对象：  
 
-`Stream<Integer> s = Optional.of(1).stream();`
+`Stream<Integer> s = Optional.of(1).stream();`  
 在组合复杂的 Stream 管道时，将 Optional 转换为 Stream 非常有用。
 
 **7.私有接口方法**  
