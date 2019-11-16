@@ -19,7 +19,7 @@
 本篇文章所分析的源码版本为 JDK 1.8。与 JDK 1.7 相比，JDK 1.8 对 HashMap 进行了一些优化。比如引入红黑树解决过长链表效率低的问题。重写 resize 方法，移除了 alternative hashing 相关方法，避免重新计算键的 hash 等。不过本篇文章并不打算对这些优化进行分析，本文仅会分析 HashMap 常用的方法及一些重要属性和相关方法。如果大家对红黑树感兴趣，可以阅读我的另一篇文章 - 红黑树详细分析。
 
 ### 3.1 构造方法
- ####  3.1.1 构造方法分析
+####  3.1.1 构造方法分析
 HashMap 的构造方法不多，只有四个。HashMap 构造方法做的事情比较简单，一般都是初始化一些重要变量，比如 loadFactor 和 threshold。而底层的数据结构则是延迟到插入键值对时再进行初始化。HashMap 相关构造方法如下：
 
 
@@ -52,6 +52,7 @@ HashMap 的构造方法不多，只有四个。HashMap 构造方法做的事情�
 	    this.loadFactor = DEFAULT_LOAD_FACTOR;
 	    putMapEntries(m, false);
 	}
+	
 上面4个构造方法中，大家平时用的最多的应该是第一个了。第一个构造方法很简单，仅将 loadFactor 变量设为默认值。构造方法2调用了构造方法3，而构造方法3仍然只是设置了一些变量。构造方法4则是将另一个 Map 中的映射拷贝一份到自己的存储结构中来，这个方法不是很常用。
 
 上面就是对构造方法简单的介绍，构造方法本身并没什么太多东西，所以就不说了。接下来说说构造方法所初始化的几个的变量。
@@ -392,95 +393,95 @@ HashIterator 在初始化时，会先遍历桶数组，找到包含链表节点�
 HashMap 的扩容机制与其他变长集合的套路不太一样，HashMap 按当前桶数组长度的2倍进行扩容，阈值也变为原来的2倍（如果计算过程中，阈值溢出归零，则按阈值公式重新计算）。扩容之后，要重新计算键值对的位置，并把它们移动到合适的位置上去。以上就是 HashMap 的扩容大致过程，接下来我们来看看具体的实现：
 
 
-final Node<K,V>[] resize() {
-    Node<K,V>[] oldTab = table;
-    int oldCap = (oldTab == null) ? 0 : oldTab.length;
-    int oldThr = threshold;
-    int newCap, newThr = 0;
-    // 如果 table 不为空，表明已经初始化过了
-    if (oldCap > 0) {
-        // 当 table 容量超过容量最大值，则不再扩容
-        if (oldCap >= MAXIMUM_CAPACITY) {
-            threshold = Integer.MAX_VALUE;
-            return oldTab;
-        } 
-        // 按旧容量和阈值的2倍计算新容量和阈值的大小
-        else if ((newCap = oldCap << 1) < MAXIMUM_CAPACITY &&
-                 oldCap >= DEFAULT_INITIAL_CAPACITY)
-            newThr = oldThr << 1; // double threshold
-    } else if (oldThr > 0) // initial capacity was placed in threshold
-        /*
-         * 初始化时，将 threshold 的值赋值给 newCap，
-         * HashMap 使用 threshold 变量暂时保存 initialCapacity 参数的值
-         */ 
-        newCap = oldThr;
-    else {               // zero initial threshold signifies using defaults
-        /*
-         * 调用无参构造方法时，桶数组容量为默认容量，
-         * 阈值为默认容量与默认负载因子乘积
-         */
-        newCap = DEFAULT_INITIAL_CAPACITY;
-        newThr = (int)(DEFAULT_LOAD_FACTOR * DEFAULT_INITIAL_CAPACITY);
-    }
-    
-    // newThr 为 0 时，按阈值计算公式进行计算
-    if (newThr == 0) {
-        float ft = (float)newCap * loadFactor;
-        newThr = (newCap < MAXIMUM_CAPACITY && ft < (float)MAXIMUM_CAPACITY ?
-                  (int)ft : Integer.MAX_VALUE);
-    }
-    threshold = newThr;
-    // 创建新的桶数组，桶数组的初始化也是在这里完成的
-    Node<K,V>[] newTab = (Node<K,V>[])new Node[newCap];
-    table = newTab;
-    if (oldTab != null) {
-        // 如果旧的桶数组不为空，则遍历桶数组，并将键值对映射到新的桶数组中
-        for (int j = 0; j < oldCap; ++j) {
-            Node<K,V> e;
-            if ((e = oldTab[j]) != null) {
-                oldTab[j] = null;
-                if (e.next == null)
-                    newTab[e.hash & (newCap - 1)] = e;
-                else if (e instanceof TreeNode)
-                    // 重新映射时，需要对红黑树进行拆分
-                    ((TreeNode<K,V>)e).split(this, newTab, j, oldCap);
-                else { // preserve order
-                    Node<K,V> loHead = null, loTail = null;
-                    Node<K,V> hiHead = null, hiTail = null;
-                    Node<K,V> next;
-                    // 遍历链表，并将链表节点按原顺序进行分组
-                    do {
-                        next = e.next;
-                        if ((e.hash & oldCap) == 0) {
-                            if (loTail == null)
-                                loHead = e;
-                            else
-                                loTail.next = e;
-                            loTail = e;
+    final Node<K,V>[] resize() {
+        Node<K,V>[] oldTab = table;
+        int oldCap = (oldTab == null) ? 0 : oldTab.length;
+        int oldThr = threshold;
+        int newCap, newThr = 0;
+        // 如果 table 不为空，表明已经初始化过了
+        if (oldCap > 0) {
+            // 当 table 容量超过容量最大值，则不再扩容
+            if (oldCap >= MAXIMUM_CAPACITY) {
+                threshold = Integer.MAX_VALUE;
+                return oldTab;
+            } 
+            // 按旧容量和阈值的2倍计算新容量和阈值的大小
+            else if ((newCap = oldCap << 1) < MAXIMUM_CAPACITY &&
+                     oldCap >= DEFAULT_INITIAL_CAPACITY)
+                newThr = oldThr << 1; // double threshold
+        } else if (oldThr > 0) // initial capacity was placed in threshold
+            /*
+             * 初始化时，将 threshold 的值赋值给 newCap，
+             * HashMap 使用 threshold 变量暂时保存 initialCapacity 参数的值
+             */ 
+            newCap = oldThr;
+        else {               // zero initial threshold signifies using defaults
+            /*
+             * 调用无参构造方法时，桶数组容量为默认容量，
+             * 阈值为默认容量与默认负载因子乘积
+             */
+            newCap = DEFAULT_INITIAL_CAPACITY;
+            newThr = (int)(DEFAULT_LOAD_FACTOR * DEFAULT_INITIAL_CAPACITY);
+        }
+        
+        // newThr 为 0 时，按阈值计算公式进行计算
+        if (newThr == 0) {
+            float ft = (float)newCap * loadFactor;
+            newThr = (newCap < MAXIMUM_CAPACITY && ft < (float)MAXIMUM_CAPACITY ?
+                      (int)ft : Integer.MAX_VALUE);
+        }
+        threshold = newThr;
+        // 创建新的桶数组，桶数组的初始化也是在这里完成的
+        Node<K,V>[] newTab = (Node<K,V>[])new Node[newCap];
+        table = newTab;
+        if (oldTab != null) {
+            // 如果旧的桶数组不为空，则遍历桶数组，并将键值对映射到新的桶数组中
+            for (int j = 0; j < oldCap; ++j) {
+                Node<K,V> e;
+                if ((e = oldTab[j]) != null) {
+                    oldTab[j] = null;
+                    if (e.next == null)
+                        newTab[e.hash & (newCap - 1)] = e;
+                    else if (e instanceof TreeNode)
+                        // 重新映射时，需要对红黑树进行拆分
+                        ((TreeNode<K,V>)e).split(this, newTab, j, oldCap);
+                    else { // preserve order
+                        Node<K,V> loHead = null, loTail = null;
+                        Node<K,V> hiHead = null, hiTail = null;
+                        Node<K,V> next;
+                        // 遍历链表，并将链表节点按原顺序进行分组
+                        do {
+                            next = e.next;
+                            if ((e.hash & oldCap) == 0) {
+                                if (loTail == null)
+                                    loHead = e;
+                                else
+                                    loTail.next = e;
+                                loTail = e;
+                            }
+                            else {
+                                if (hiTail == null)
+                                    hiHead = e;
+                                else
+                                    hiTail.next = e;
+                                hiTail = e;
+                            }
+                        } while ((e = next) != null);
+                        // 将分组后的链表映射到新桶中
+                        if (loTail != null) {
+                            loTail.next = null;
+                            newTab[j] = loHead;
                         }
-                        else {
-                            if (hiTail == null)
-                                hiHead = e;
-                            else
-                                hiTail.next = e;
-                            hiTail = e;
+                        if (hiTail != null) {
+                            hiTail.next = null;
+                            newTab[j + oldCap] = hiHead;
                         }
-                    } while ((e = next) != null);
-                    // 将分组后的链表映射到新桶中
-                    if (loTail != null) {
-                        loTail.next = null;
-                        newTab[j] = loHead;
-                    }
-                    if (hiTail != null) {
-                        hiTail.next = null;
-                        newTab[j + oldCap] = hiHead;
                     }
                 }
             }
         }
+        return newTab;
     }
-    return newTab;
-}
 
 上面的源码有点长，希望大家耐心看懂它的逻辑。上面的源码总共做了3件事，分别是：
 
@@ -655,7 +656,7 @@ tie break 是网球术语，可以理解为加时赛的意思，起这个名字�
 
 橙色的箭头表示 TreeNode 的 next 引用。由于空间有限，prev 引用未画出。可以看出，链表转成红黑树后，原链表的顺序仍然会被引用仍被保留了（红黑树的根节点会被移动到链表的第一位），我们仍然可以按遍历链表的方式去遍历上面的红黑树。这样的结构为后面红黑树的切分以及红黑树转成链表做好了铺垫，我们继续往下分析。
 
- **红黑树拆分**
+ **红黑树拆分**   
 扩容后，普通节点需要重新映射，红黑树节点也不例外。按照一般的思路，我们可以先把红黑树转成链表，之后再重新映射链表即可。这种处理方式是大家比较容易想到的，但这样做会损失一定的效率。不同于上面的处理方式，HashMap 实现的思路则是上好佳（上好佳请把广告费打给我）。如上节所说，在将普通链表转成红黑树时，HashMap 通过两个额外的引用 next 和 prev 保留了原链表的节点顺序。这样再对红黑树进行重新映射时，完全可以按照映射链表的方式进行。这样就避免了将红黑树转成链表后再进行映射，无形中提高了效率。
 
 以上就是红黑树拆分的逻辑，下面看一下具体实现吧：
@@ -726,7 +727,7 @@ tie break 是网球术语，可以理解为加时赛的意思，起这个名字�
 ![](https://user-gold-cdn.xitu.io/2019/11/16/16e72ce83d2a9c3f?w=1602&h=514&f=png&s=381241)
 
 
- **红黑树链化**
+ **红黑树链化**     
 前面说过，红黑树中仍然保留了原链表节点顺序。有了这个前提，再将红黑树转成链表就简单多了，仅需将 TreeNode 链表转成 Node 类型的链表即可。相关代码如下：
 	
 	final Node<K,V> untreeify(HashMap<K,V> map) {
@@ -827,7 +828,10 @@ HashMap 的删除操作并不复杂，仅需三个步骤即可完成。第一步
 
 综上所述，大家应该能明白 HashMap 不序列化 table 的原因了。
 
-## 3.7 总结在这里插入图片描述
+## 3.7 总结
 本章对 HashMap 常见操作相关代码进行了详细分析，并在最后补充了一些其他细节。在本章中，插入操作一节的内容说的最多，主要是因为插入操作涉及的点特别多，一环扣一环。包含但不限于“table 初始化、扩容、树化”等，总体来说，插入操作分析起来难度还是很大的。好在，最后分析完了。
 
 本章篇幅虽比较大，但仍未把 HashMap 所有的点都分析到。比如，红黑树的增删查等操作。当然，我个人看来，以上的分析已经够了。毕竟大家是类库的使用者而不是设计者，没必要去弄懂每个细节。所以如果某些细节实在看不懂的话就跳过吧，对我们开发来说，知道 HashMap 大致原理即可。
+
+
+>文章链接：http://www.tianxiaobo.com/
