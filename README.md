@@ -30,8 +30,8 @@
 + [设计模式](#设计模式)
 + [Spring精选面试题](#Spring精选面试题)
 + [ Mybatis](#Mybatis)
-+ [Spring MVC精选面试题](#Spring MVC精选面试题)
-+ [Spring Boot精选面试题](#Spring Boot精选面试题)
++ [SpringMVC精选面试题](#SpringMVC精选面试题)
++ [SpringBoot精选面试题](#SpringBoot精选面试题)
 + [SpringCloud精选面试题](#SpringCloud精选面试题)
 + [SQL数据库](#SQL数据库)
 + [NoSQL数据库](#NoSQL数据库)
@@ -103,11 +103,11 @@
 
 + 《面试知识，工作可待篇-Mybatis篇》-Mybatis知识点大全
 
-### Spring MVC精选面试题
+### SpringMVC精选面试题
 
 + 《面试知识，工作可待篇-Spring MVC篇》-Spring MVC知识点大全
 
-### Spring Boot精选面试题
+### SpringBoot精选面试题
 
 + 《面试知识，工作可待篇-Spring Boot篇》-Spring Boot知识点大全
 
