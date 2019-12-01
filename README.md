@@ -5,9 +5,9 @@
 >欢迎关注：【**JavaCommunity**】，一起学习   
 >《提升能力，涨薪可待篇》  
 >《面试知识，工作可待篇》  
->《实战演练，拒绝996篇》 
->也欢迎关注微信公众号[【**Ccww笔记**】]()，原创技术文章第一时间推出  
->如果学习社区对你有帮助、喜欢的话，那就点个star呗！
+>《实战演练，拒绝996篇》   
+>也欢迎关注微信公众号[【**Ccww笔记**】](#公众号)，原创技术文章第一时间推出  
+>如果学习社区对你有帮助、喜欢的话，那就点个star呗！  
 
 ## 前言
 
@@ -24,51 +24,51 @@
 [《面试知识，工作可待篇》](#《面试知识，工作可待篇》)
 
 + [Java基础知识](#Java基础知识)
-+ [Java集合][#Java集合]
-+ [Java多线程与并发][#Java多线程与并发]
-+ [JVM虚拟机][#JVM虚拟机]
-+ [设计模式][#设计模式]
-+ [Spring精选面试题][#Spring精选面试题]
-+ [ Mybatis][#Mybatis]
-+ [Spring MVC精选面试题][#Spring MVC精选面试题]
-+ [Spring Boot精选面试题][#Spring Boot精选面试题]
-+ [SpringCloud精选面试题][#SpringCloud精选面试题]
-+ [SQL数据库][#SQL数据库]
-+ [NoSQL数据库][#NoSQL数据库]
-+ [消息队列][#消息队列]
-+ [缓存][#缓存]
-+ [Netty][#Netty]
-+ [Dubbo][#Dubbo]
-+ [Zookeeper][#Zookeeper]
-+ [Linux][#Linux]
-+ [Nginx][#Nginx]
-+ [Tomcat][#Tomcat]
-+ [计算机网络][#计算机网络]
-+ [数据结构][#数据结构]
-+ [算法][#算法]
-+ [面试技巧][#面试技巧]
++ [Java集合](#Java集合)
++ [Java多线程与并发](#Java多线程与并发)
++ [JVM虚拟机](#JVM虚拟机)
++ [设计模式](#设计模式)
++ [Spring精选面试题](#Spring精选面试题)
++ [ Mybatis](#Mybatis)
++ [Spring MVC精选面试题](#Spring MVC精选面试题)
++ [Spring Boot精选面试题](#Spring Boot精选面试题)
++ [SpringCloud精选面试题](#SpringCloud精选面试题)
++ [SQL数据库](#SQL数据库)
++ [NoSQL数据库](#NoSQL数据库)
++ [消息队列](#消息队列)
++ [缓存](#缓存)
++ [Netty](#Netty)
++ [Dubbo](#Dubbo)
++ [Zookeeper](#Zookeeper)
++ [Linux](#Linux)
++ [Nginx](#Nginx)
++ [Tomcat](#Tomcat)
++ [计算机网络](#计算机网络)
++ [数据结构](#数据结构)
++ [算法](#算法)
++ [面试技巧](#面试技巧)
 
 [《提升能力，涨薪可待篇》](#《提升能力，涨薪可待篇》)
 
-+ [Java基础][#Java基础]
-  + [基础][#基础]
-  + [容器][#容器]
-  + [多线程与并发][#多线程与并发]
-  + [JVM][#JVM]
-  + [I/O][#I/O]
-  + [网络][#网络]
-+ [数据库][]
-  + [SQL][#SQL]
-  + [NoSQL][#NoSQL]
-+ [分布式系统][#分布式系统]
-+ [微服务][#微服务]
++ [Java基础](#Java基础)
+  + [基础](#基础)
+  + [容器](#容器)
+  + [多线程与并发](#多线程与并发)
+  + [JVM](#JVM)
+  + [I/O](#I/O)
+  + [网络](#网络)
++ [数据库](#数据库)
+  + [SQL](#SQL)
+  + [NoSQL](#NoSQL)
++ [分布式系统](#分布式系统)
++ [微服务](#微服务)
 
-[《实战演练，拒绝996篇》][]
+[《实战演练，拒绝996篇》](#《实战演练，拒绝996篇》)
 
-+ [代码优化][#代码优化]
-+ [SpringBoot集成][#SpringBoot集成]
-+ [SpringCloud微服务][#SpringCloud微服务]
-+ [项目][#项目]
++ [代码优化](#代码优化)
++ [SpringBoot集成](#SpringBoot集成)
++ [SpringCloud微服务](#SpringCloud微服务)
++ [项目](#项目)
 
 
 
@@ -227,3 +227,10 @@
 ### SpringCloud微服务
 
 ### 项目
+
+
+
+## 公众号
+
+欢迎关注微信公众号[【**Ccww笔记**】](#公众号)，原创技术文章第一时间推出  ，并且获取更多资料和视频
+![img](https://img-blog.csdnimg.cn/20191129102337922.png)
