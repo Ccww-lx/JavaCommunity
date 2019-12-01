@@ -1,4 +1,4 @@
-# JavaCommunity（后端开发必备，技术知识应有尽有）
+JavaCommunity（后端开发必备，技术知识应有尽有）
 
 > **JavaCommunity开源社区的文章收集来源网络各个平台，如果有侵犯到各位博主，请联系我，我马上删除，谢谢哈，最后请大家多多支持,Star一个！！**
 
@@ -23,29 +23,49 @@
 
 [《面试知识，工作可待篇》](#《面试知识，工作可待篇》)
 
-+ [Java基础知识](#Java基础知识)
-+ [Java集合](#Java集合)
-+ [Java多线程与并发](#Java多线程与并发)
-+ [JVM虚拟机](#JVM虚拟机)
-+ [设计模式](#设计模式)
-+ [Spring精选面试题](#Spring精选面试题)
-+ [ Mybatis](#Mybatis)
-+ [SpringMVC精选面试题](#SpringMVC精选面试题)
-+ [SpringBoot精选面试题](#SpringBoot精选面试题)
-+ [SpringCloud精选面试题](#SpringCloud精选面试题)
-+ [SQL数据库](#SQL数据库)
-+ [NoSQL数据库](#NoSQL数据库)
++ [java基础](#Java基础知识)
+  + [Java基础知识](#Java基础知识)
+  + [Java集合](#Java集合)
+  + [Java多线程与并发](#Java多线程与并发)
+  + [JVM虚拟机](#JVM虚拟机)
+  + [设计模式](#设计模式)
++ [Spring全家桶](#Spring精选面试题)
+  + [Spring精选面试题](#Spring精选面试题)
+  + [SpringMVC精选面试题](#SpringMVC精选面试题)
+  + [SpringBoot精选面试题](#SpringBoot精选面试题)
+  + [SpringCloud精选面试题](#SpringCloud精选面试题)
++ [数据库](#SQL数据库)
+  + [SQL数据库](#SQL数据库)
+  + [NoSQL数据库](#NoSQL数据库)
+
++ [ORM框架](#ORM框架)
+  + [ Mybatis](#Mybatis)
+  + [Hibernate](Hibernate)
 + [消息队列](#消息队列)
+  + [RocketMQ](#消息队列)
+  + [Kafka](#消息队列)
+  + [RabbitMQ](#消息队列)
+  + [ActiveMQ](#消息队列)
 + [缓存](#缓存)
-+ [Netty](#Netty)
-+ [Dubbo](#Dubbo)
-+ [Zookeeper](#Zookeeper)
++ [服务调用](#服务调用)
+  + [SpringCloudFegin](#SpringCloudFegin)
+  + [Dubbo](#Dubbo)
++ [注册中心](#注册中心)
+  + [Eureka](#Eureka)
+  + [Zookeeper](#Zookeeper)
++ [配置中心](#配置中心)
+  + [Apollo](#Apollo)
+  + [SpringCloud Config](#SpringCloudConfig)
+
++ [服务器](#服务器)
+  + [Tomcat](#Tomcat)
+  + [Netty](#Netty)
+  + [Nginx](#Nginx)
 + [Linux](#Linux)
-+ [Nginx](#Nginx)
-+ [Tomcat](#Tomcat)
 + [计算机网络](#计算机网络)
 + [数据结构](#数据结构)
 + [算法](#算法)
++ [开发工具](#开发工具)
 + [面试技巧](#面试技巧)
 
 [《提升能力，涨薪可待篇》](#《提升能力，涨薪可待篇》)
@@ -72,105 +92,151 @@
 
 
 
+
+
+
+
 ## 《面试知识，工作可待篇》
 
-### Java基础知识
+### Java基础
 
-+ [《面试知识，工作可待篇-Java篇》-java基础知识点大全]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/base/javabase.md )
+#### Java基础知识
 
-### Java集合
++ [《面试知识，工作可待篇-Java篇》]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/base/javabase.md )
 
-+ [《面试知识，工作可待篇-集合篇》-java集合知识点大全](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/collectionbase.md  )
+#### Java集合
 
-### Java多线程与并发
++ [《面试知识，工作可待篇-集合篇》](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/collectionbase.md  )
 
-+ [《面试知识，工作可待篇-多线程与并发篇》-java多线程与并发知识点大全]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/threadbase.md  )
+#### Java多线程与并发
 
-### JVM虚拟机
++ [《面试知识，工作可待篇-多线程与并发篇》]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/threadbase.md  )
 
-+ [《面试知识，工作可待篇-JVM内存篇》-JVM虚拟机内存知识点大全](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/jvm/jvmbase.md  )
-+ [《面试知识，工作可待篇-JVM类加载篇》-JVM虚拟机类加载知识点大全](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/jvm/ClassLoad.md  )
+#### JVM虚拟机
 
-### 设计模式
++ [《面试知识，工作可待篇-JVM内存篇》](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/jvm/jvmbase.md  )
++ [《面试知识，工作可待篇-JVM类加载篇》](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/jvm/ClassLoad.md  )
 
-+ [《面试知识，工作可待篇-设计模式篇》-设计模式知识点大全](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/designMode.md )
+#### 设计模式
 
-### Spring精选面试题
++ [《面试知识，工作可待篇-设计模式篇》](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/designMode.md )
 
-+ 《面试知识，工作可待篇-Spring篇》-Spring知识点大全
+### Spring全家桶
 
-###  Mybatis
+#### Spring精选面试题
 
-+ 《面试知识，工作可待篇-Mybatis篇》-Mybatis知识点大全
++ 《面试知识，工作可待篇-Spring篇》
 
-### SpringMVC精选面试题
+#### SpringMVC精选面试题
 
-+ 《面试知识，工作可待篇-Spring MVC篇》-Spring MVC知识点大全
++ 《面试知识，工作可待篇-Spring MVC篇》
 
-### SpringBoot精选面试题
+#### SpringBoot精选面试题
 
-+ 《面试知识，工作可待篇-Spring Boot篇》-Spring Boot知识点大全
++ 《面试知识，工作可待篇-Spring Boot篇》
 
-### SpringCloud精选面试题
+#### SpringCloud精选面试题
 
-+ 《面试知识，工作可待篇-SpringCloud篇》-SpringCloud知识点大全
++ 《面试知识，工作可待篇-SpringCloud篇》
 
-### SQL数据库
+### 数据库
 
-+ 《面试知识，工作可待篇-MySQL篇》-MySQL知识点大全
-+ 《面试知识，工作可待篇-分库分表篇》-分库分表知识点大全
+#### SQL数据库
 
-### NoSQL数据库
++ 《面试知识，工作可待篇-MySQL篇》
++ 《面试知识，工作可待篇-分库分表篇》
 
-+ [《面试知识，工作可待篇-redis篇》-redis知识点大全]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/base/javabase.md )
-+ [《面试知识，工作可待篇-MongoDB篇》-MongoDB知识点大全]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/base/javabase.md )
+#### NoSQL数据库
+
++ [《面试知识，工作可待篇-redis篇》]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/base/javabase.md )
++ [《面试知识，工作可待篇-MongoDB篇》]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/base/javabase.md )
+
+### ORM框架
+
+####  Mybatis
+
++ 《面试知识，工作可待篇-Mybatis篇》
+
+#### Hibernate
+
++ 《面试知识，工作可待篇-Hibernate篇》
 
 ### 消息队列
 
-+ 《面试知识，工作可待篇-消息队列知识篇》-消息队列基础知识点大全
-+ 《面试知识，工作可待篇-RocketMQ篇》-RocketMQ知识点大全
-+ 《面试知识，工作可待篇-Kafka篇》-Kafka知识点大全
-+ 《面试知识，工作可待篇-RabbitMQ篇》-RabbitMQ知识点大全
++ 《面试知识，工作可待篇-消息队列知识篇》
++ 《面试知识，工作可待篇-RocketMQ篇》
++ 《面试知识，工作可待篇-Kafka篇》
++ 《面试知识，工作可待篇-RabbitMQ篇》
 
 ### 缓存
 
-+ 《面试知识，工作可待篇-缓存篇》-缓存知识点大全
++ 《面试知识，工作可待篇-缓存篇》
 
-### Netty
+### 服务调用
 
-+ 《面试知识，工作可待篇-Netty篇》-Netty知识点大全
+#### Fegin
 
-### Dubbo
++ 《面试知识，工作可待篇-SpringCloud Fegin篇》
 
-+ 《面试知识，工作可待篇-Dubbo篇》-Dubbo知识点大全
+#### Dubbo
 
-### Zookeeper
++ 《面试知识，工作可待篇-Dubbo篇》
 
-+ 《面试知识，工作可待篇-Zookeeper篇》-Zookeeper知识点大全
+### 注册中心
+
+#### Eureka
+
++ 《面试知识，工作可待篇-Eureka篇》
+
+#### Zookeeper
+
++ 《面试知识，工作可待篇-Zookeeper篇》
+
+### 配置中心
+
+#### Apollo
+
++ 《面试知识，工作可待篇-Apollo篇
+
+#### SpringCloud Config
+
++ 《面试知识，工作可待篇-SpringCloud Config篇》
+
+### 服务器
+
+#### Tomcat
+
++ 《面试知识，工作可待篇-Tomcat篇》
+
+#### Netty
+
++ 《面试知识，工作可待篇-Netty篇》
+
+#### Nginx
+
++ 《面试知识，工作可待篇-Nginx篇》
 
 ### Linux
 
-+ 《面试知识，工作可待篇-Linux篇》-Linux知识点大全
-
-### Nginx
-
-+ 《面试知识，工作可待篇-Nginx篇》-Nginx知识点大全
-
-### Tomcat
-
-+ 《面试知识，工作可待篇-Tomcat篇》-Tomcat知识点大全
++ 《面试知识，工作可待篇-Linux篇》
 
 ### 计算机网络
 
-+ 《面试知识，工作可待篇-计算机网络基础篇》-计算机网络基础知识点大全
++ 《面试知识，工作可待篇-计算机网络基础篇》
 
 ### 数据结构
 
-+ 《面试知识，工作可待篇-数据结构篇》-数据结构知识点大全
++ 《面试知识，工作可待篇-数据结构篇》
 
 ### 算法
 
-- 《面试知识，工作可待篇-算法面试篇》-算法面试知识点大全
+- 《面试知识，工作可待篇-算法面试篇》
+
+### 开发工具
+
++ 《面试知识，工作可待篇-Maven篇》
+
++ 《面试知识，工作可待篇-Git篇》
 
 ### 面试技巧
 
@@ -225,6 +291,8 @@
 ### SpringBoot集成
 
 ### SpringCloud微服务
+
+### 工具
 
 ### 项目
 
