@@ -118,11 +118,11 @@
 + [面试：在面试中关于List（ArrayList、LinkedList）集合会怎么问呢？你该如何回答呢？](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/ArrayList&Linkedist面试.md)
 #### Java多线程与并发
 
-+ [面试：多线程与并发基础》]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/do
++ [面试：多线程与并发基础]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/threadbase.md)
+
+#### JVM虚拟机
 + [《面试知识，工作可待篇-JVM内存篇》](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/jvm/jvmbase.md  )
 + [《面试知识，工作可待篇-JVM类加载篇》](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/jvm/ClassLoad.md  )
-c/javabase/thread/threadbase.md  )
-#### JVM虚拟机
 
 #### 设计模式
 
