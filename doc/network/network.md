@@ -38,7 +38,7 @@
 
 学习计算机网络时我们一般采用折中的办法，也就是中和 OSI 和 TCP/IP 的优点，采用一种只有五层协议的体系结构，这样既简洁又能将概念阐述清楚。
 
-![五层体系结构](C:\Users\Adminn\Desktop\JavaCommunity\data\network\osi.png)
+![五层体系结构](/data/network/osi.png)
 
 结合互联网的情况，自上而下地，非常简要的介绍一下各层的作用。
 
@@ -94,7 +94,7 @@
 
 上面我们对计算机网络的五层体系结构有了初步的了解，下面附送一张七层体系结构图总结一下。图片来源：https://blog.csdn.net/yaopeng_2005/article/details/7064869
 
-![七层体系结构图](C:\Users\Adminn\Desktop\JavaCommunity\data\network\format.png)
+![七层体系结构图](/data/network/format.png)
 
 ## 二 TCP 三次握手和四次挥手(面试常客)
 
@@ -103,10 +103,10 @@
 ### 2.1 TCP 三次握手漫画图解
 
 如下图所示，下面的两个机器人通过3次握手确定了对方能正确接收和发送消息(图片来源：《图解HTTP》)。
-![TCP三次握手](C:\Users\Adminn\Desktop\JavaCommunity\data\network\三次握手.png)
+![TCP三次握手](/data/network/三次握手.png)
 
 **简单示意图：**
-![TCP三次握手](C:\Users\Adminn\Desktop\JavaCommunity\data\network\三次握手示意图png)
+![TCP三次握手](/data/network/三次握手示意图png)
 
 - 客户端–发送带有 SYN 标志的数据包–一次握手–服务端
 - 服务端–发送带有 SYN/ACK 标志的数据包–二次握手–客户端
@@ -135,7 +135,7 @@
 
 双方通信无误必须是两者互相发送信息都无误。传了 SYN，证明发送方到接收方的通道没有问题，但是接收方到发送方的通道还需要 ACK 信号来进行验证。
 
-![TCP四次挥手](C:\Users\Adminn\Desktop\JavaCommunity\data\network\四次挥手.png)
+![TCP四次挥手](/data/network/四次挥手.png)
 
 断开一个 TCP 连接则需要“四次挥手”：
 
@@ -154,7 +154,7 @@
 
 ## 三 TCP,UDP 协议的区别
 
-![TCP、UDP协议的区别](C:\Users\Adminn\Desktop\JavaCommunity\data\network\tcp-udp.png)
+![TCP、UDP协议的区别](/data/network/tcp-udp.png)
 
 UDP 在传送数据之前不需要先建立连接，远地主机在收到 UDP 报文后，不需要给出任何确认。虽然 UDP 不提供可靠交付，但在某些情况下 UDP 确是一种最有效的工作方式（一般用于即时通信），比如： QQ 语音、 QQ 视频 、直播等等
 
@@ -248,7 +248,7 @@ TCP的拥塞控制采用了四种算法，即 **慢开始** 、 **拥塞避免**
 
 ## 六 状态码
 
-![状态码](C:\Users\Adminn\Desktop\JavaCommunity\data\network\状态码.png)
+![状态码](/data/network/状态码.png)
 
 
 ## 七 各种协议与HTTP协议之间的关系
@@ -285,7 +285,7 @@ HTTP 是一种不保存状态，即无状态（stateless）协议。也就是说
 
 最常用的就是利用 URL 重写把 Session ID 直接附加在URL路径的后面。
 
-![HTTP是无状态协议](C:\Users\Adminn\Desktop\JavaCommunity\data\network\http无状态.png)
+![HTTP是无状态协议](/data/network/http无状态.png)
 
 ## 十 Cookie的作用是什么?和Session有什么区别？
 
