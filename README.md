@@ -107,7 +107,7 @@
 + [StringBuilder在高性能场景下的正确用法](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/StringBuilder在高性能场景下的正确用法.md)
 + [深入浅出Java注解](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/深入浅出Java注解.md)
 + [一篇文章让你彻底了解Java内部类](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/一篇文章让你彻底了解Java内部类.md)
-+ [你可能不知道的Java Integer的缓存策略](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/你可能不知道的Java Integer的缓存策略.md)
++ [你可能不知道的Java Integer的缓存策略](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/你可能不知道的Java.Integer的缓存策略.md)
 #### Java集合
 
 + [《面试知识，工作可待篇-集合篇》](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/collectionbase.md  )
