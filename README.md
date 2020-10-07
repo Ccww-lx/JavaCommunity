@@ -102,24 +102,27 @@
 
 #### Java基础知识
 + [jdk版本特性](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/jdk版本特性.md)
-+ [Java篇知识点（）]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/base/javabase.md )
 + [Java对象的浅克隆和深克隆](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/Java对象的浅克隆和深克隆.md)
 + [StringBuilder在高性能场景下的正确用法](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/StringBuilder在高性能场景下的正确用法.md)
 + [深入浅出Java注解](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/深入浅出Java注解.md)
 + [一篇文章让你彻底了解Java内部类](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/一篇文章让你彻底了解Java内部类.md)
 + [你可能不知道的Java Integer的缓存策略](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/你可能不知道的Java.Integer的缓存策略.md)
++ [面试：Java基础知识点（涉及范围广）]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/base/javabase.md )
 #### Java集合
-
-+ [《面试知识，工作可待篇-集合篇》](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/collectionbase.md  )
-
++ [TreeMap源码分析](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/TreeMap%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90.md)  
++ [HashMap 源码详细分析(jdk 1.8)](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/HashMap%20%E6%BA%90%E7%A0%81%E8%AF%A6%E7%BB%86%E5%88%86%E6%9E%90.md)
++ [LinkedHashMap 源码详细分析(jdk 1.8)](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/LinkedHashMap%20%E6%BA%90%E7%A0%81%E8%AF%A6%E7%BB%86%E5%88%86%E6%9E%90.md)
++ [ArrayList 源码分析](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/ArrayList%20%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90.md)
++ [LinkedHashMap 源码详细分析](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/LinkedHashMap%20%E6%BA%90%E7%A0%81%E8%AF%A6%E7%BB%86%E5%88%86%E6%9E%90.md)
++ [面试-集合基础》](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/collectionbase.md  )
++ [面试：在面试中关于List（ArrayList、LinkedList）集合会怎么问呢？你该如何回答呢？](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/ArrayList&Linkedist面试.md)
 #### Java多线程与并发
 
-+ [《面试知识，工作可待篇-多线程与并发篇》]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/threadbase.md  )
-
-#### JVM虚拟机
-
++ [面试：多线程与并发基础》]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/do
 + [《面试知识，工作可待篇-JVM内存篇》](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/jvm/jvmbase.md  )
 + [《面试知识，工作可待篇-JVM类加载篇》](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/jvm/ClassLoad.md  )
+c/javabase/thread/threadbase.md  )
+#### JVM虚拟机
 
 #### 设计模式
 
@@ -254,21 +257,11 @@
 
 ### 基础
 
-+ [jdk各个版本特性](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/jdk%E7%89%88%E6%9C%AC%E7%89%B9%E6%80%A7.md)
-+ [Java对象的浅克隆和深克隆](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/Java%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%B5%85%E5%85%8B%E9%9A%86%E5%92%8C%E6%B7%B1%E5%85%8B%E9%9A%86.md)
-+ [必须理解的Java 类的实例化顺序](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/%E5%BF%85%E9%A1%BB%E7%90%86%E8%A7%A3%E7%9A%84Java%20%E7%B1%BB%E7%9A%84%E5%AE%9E%E4%BE%8B%E5%8C%96%E9%A1%BA%E5%BA%8F.md)
-+ [一篇文章让你彻底了解Java内部类](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E8%AE%A9%E4%BD%A0%E5%BD%BB%E5%BA%95%E4%BA%86%E8%A7%A3Java%E5%86%85%E9%83%A8%E7%B1%BB.md)
-+ [深入浅出Java注解](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAJava%E6%B3%A8%E8%A7%A3.md)
-+ [你可能不知道的Java Integer的缓存策略](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/%E4%BD%A0%E5%8F%AF%E8%83%BD%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84Java%20Integer%E7%9A%84%E7%BC%93%E5%AD%98%E7%AD%96%E7%95%A5.md)
-+ [StringBuilder在高性能场景下的正确用法](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/StringBuilder%E5%9C%A8%E9%AB%98%E6%80%A7%E8%83%BD%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%9A%84%E6%AD%A3%E7%A1%AE%E7%94%A8%E6%B3%95.md)
+
 
 ### 容器
 
-+ [TreeMap源码分析](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/TreeMap%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90.md)  
-+ [HashMap 源码详细分析(jdk 1.8)](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/HashMap%20%E6%BA%90%E7%A0%81%E8%AF%A6%E7%BB%86%E5%88%86%E6%9E%90.md)
-+ [LinkedHashMap 源码详细分析(jdk 1.8)](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/LinkedHashMap%20%E6%BA%90%E7%A0%81%E8%AF%A6%E7%BB%86%E5%88%86%E6%9E%90.md)
-+ [ArrayList 源码分析](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/ArrayList%20%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90.md)
-+ [LinkedHashMap 源码详细分析](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/LinkedHashMap%20%E6%BA%90%E7%A0%81%E8%AF%A6%E7%BB%86%E5%88%86%E6%9E%90.md)
++
 
 ### 多线程与并发
 
