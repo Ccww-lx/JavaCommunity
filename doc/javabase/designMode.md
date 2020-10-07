@@ -1,11 +1,3 @@
->欢迎关注文章系列，一起学习   
-《提升能力，涨薪可待篇》   
-《面试知识，工作可待篇》  
-《实战演练，拒绝996篇》   
-也欢迎关注公 众 号【Ccww笔记】，原创技术文章第一时间推出     
-![!img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAxOS8xMS8yNS8xNmVhMjhiNDA3OWQ1OTQx?x-oss-process=image/format,png)      
-如果此文对你有帮助、喜欢的话，那就点个Star💗！
-
 ## 设计模式常见面试题
 
 ### 1.设计模式分类

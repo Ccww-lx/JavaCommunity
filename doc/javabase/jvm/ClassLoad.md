@@ -1,16 +1,5 @@
-> 欢迎关注文章系列，一起学习   
-> 《提升能力，涨薪可待篇》  
-> 《面试知识，工作可待篇》  
-> 《实战演练，拒绝996篇》   
-> 也欢迎关注公 众 号【Ccww笔记】，原创技术文章第一时间推出  
->
->  ![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAxOS8xMS8yNS8xNmVhMjhiNDA3OWQ1OTQx?x-oss-process=image/format,png)   
->
-> 如果此文对你有帮助、喜欢的话，那就点个Star呗！   
 
-
-
- 当程序主动使用某个类时，如果该类还未被加载到内存中，则JVM会通过加载、连接、初始化3个步骤来对该类进行初始化。如果没有意外，JVM将会连续完成3个步骤，所以有时也把这个3个步骤统称为类加载或类初始化。
+当程序主动使用某个类时，如果该类还未被加载到内存中，则JVM会通过加载、连接、初始化3个步骤来对该类进行初始化。如果没有意外，JVM将会连续完成3个步骤，所以有时也把这个3个步骤统称为类加载或类初始化。
 
 ![img](https://img-blog.csdn.net/20180813115150336?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzM4MDc1NDI1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)                                      
 

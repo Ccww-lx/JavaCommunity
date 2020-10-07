@@ -6,7 +6,7 @@
 >《提升能力，涨薪可待篇》  
 >《面试知识，工作可待篇》  
 >《实战演练，拒绝996篇》   
->也欢迎关注微信公众号[【**Ccww笔记**】](#公众号)，原创技术文章第一时间推出  
+>也欢迎关注微信公众号[【**Ccww技术博客**】](#公众号)，原创技术文章第一时间推出  
 >如果学习社区对你有帮助、喜欢的话，那就点个star呗！  
 
 ## 前言
@@ -16,7 +16,7 @@
 >是不是感觉自己每天都在996加班呢？  
 
 >在工作上必须保持学习的能力，这样才能在工作得到更好的晋升，涨薪指日可待，欢迎一起学习【**提升能力，涨薪可待**】系列  
->在找工作面试应在学习的基础进行总结面试知识点，工作也指日可待，欢迎一起学习【**面试知识，工作可待**】系列   
+>在找工作面试应在学习的基础进行总结面试知识点，找工作也指日可待，欢迎一起学习【**面试知识，工作可待**】系列   
 >最后，理论知识到准备充足，是不是该躬行起来呢？欢迎一起学习【**实战演练，拒绝996**】系列
 
 ## 目录
@@ -101,9 +101,13 @@
 ### Java基础
 
 #### Java基础知识
-
-+ [《面试知识，工作可待篇-Java篇》]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/base/javabase.md )
-
++ [jdk版本特性](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/jdk版本特性.md)
++ [Java篇知识点（）]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/base/javabase.md )
++ [Java对象的浅克隆和深克隆](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/Java对象的浅克隆和深克隆.md)
++ [StringBuilder在高性能场景下的正确用法](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/StringBuilder在高性能场景下的正确用法.md)
++ [深入浅出Java注解](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/深入浅出Java注解.md)
++ [一篇文章让你彻底了解Java内部类](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/一篇文章让你彻底了解Java内部类.md)
++ [你可能不知道的Java Integer的缓存策略](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/你可能不知道的Java Integer的缓存策略.md)
 #### Java集合
 
 + [《面试知识，工作可待篇-集合篇》](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/collectionbase.md  )
@@ -222,7 +226,7 @@
 
 ### 计算机网络
 
-+ 《面试知识，工作可待篇-计算机网络基础篇》
++ [《面试知识，工作可待篇-计算机网络基础篇》]( https://github.com/Ccww-lx/JavaCommunity/blob/master/doc/network/network.md )
 
 ### 数据结构
 
