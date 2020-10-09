@@ -19,51 +19,21 @@
 >最后，理论知识到准备充足，是不是该躬行起来呢？欢迎一起学习   
 
 ## 目录
-
-
 + [java基础](#Java基础知识)
-  + [Java基础知识](#Java基础知识)
-  + [Java集合](#Java集合)
-  + [Java多线程与并发](#Java多线程与并发)
-  + [JVM虚拟机](#JVM虚拟机)
-  + [设计模式](#设计模式)
 + [Spring全家桶](#Spring精选面试题)
-  + [Spring精选面试题](#Spring精选面试题)
-  + [SpringMVC精选面试题](#SpringMVC精选面试题)
-  + [SpringBoot精选面试题](#SpringBoot精选面试题)
-  + [SpringCloud精选面试题](#SpringCloud精选面试题)
 + [数据库](#SQL数据库)
-  + [SQL数据库](#SQL数据库)
-  + [NoSQL数据库](#NoSQL数据库)
-
 + [ORM框架](#ORM框架)
-  + [ Mybatis](#Mybatis)
-  + [Hibernate](Hibernate)
 + [消息队列](#消息队列)
-  + [RocketMQ](#消息队列)
-  + [Kafka](#消息队列)
-  + [RabbitMQ](#消息队列)
-  + [ActiveMQ](#消息队列)
 + [缓存](#缓存)
 + [服务调用](#服务调用)
-  + [SpringCloudFegin](#SpringCloudFegin)
-  + [Dubbo](#Dubbo)
 + [注册中心](#注册中心)
-  + [Eureka](#Eureka)
-  + [Zookeeper](#Zookeeper)
 + [配置中心](#配置中心)
-  + [Apollo](#Apollo)
-  + [SpringCloud Config](#SpringCloudConfig)
 + [分布式系统](#分布式系统)
-+ [微服务](#微服务)
 + [代码优化](#代码优化)
 + [SpringBoot集成](#SpringBoot集成)
 + [SpringCloud微服务](#SpringCloud微服务)
 + [项目](#项目)
 + [服务器](#服务器)
-  + [Tomcat](#Tomcat)
-  + [Netty](#Netty)
-  + [Nginx](#Nginx)
 + [Linux](#Linux)
 + [计算机网络](#计算机网络)
 + [数据结构与算法](#算法)
@@ -72,13 +42,6 @@
 
 
 
-
-
-
-
-
-
-## 《面试知识，工作可待篇》
 
 ### Java基础
 
@@ -99,10 +62,15 @@
 + [面试-集合基础》](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/collectionbase.md  )
 + [面试：在面试中关于List（ArrayList、LinkedList）集合会怎么问呢？你该如何回答呢？](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/ArrayList&Linkedist面试.md)
 + [面试：为了进阿里，必须掌握HashMap原理和面试题（图解版一）](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/HashMap原理和面试题(图解版一).md)
++ [面试：为了进阿里，死磕了ConcurrentHashMap源码和面试题(一)](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/ConcurrentHashMap源码和面试题一.md)
++ [面试：为了进阿里，死磕了ConcurrentHashMap源码和面试题(二)](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/ConcurrentHashMap源码和面试题二.md)
 
 #### Java多线程与并发
-
-+ [面试：多线程与并发基础]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/threadbase.md)
++ [面试：为了进阿里，又把并发CAS（Compare and Swap）实现重新精读一遍](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/threadbase.md)
++ [Java并发之Synchronized](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/threadbase.md)
++ [Java并发之Synchronized](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/threadbase.md)
++ [Java并发之Synchronized](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/threadbase.md)
++ [面试：多线程与并发基础](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/threadbase.md)
 
 #### JVM虚拟机
 + [《面试知识，工作可待篇-JVM内存篇》](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/jvm/jvmbase.md  )
@@ -249,4 +217,4 @@
 ## 公众号
 
 欢迎关注微信公众号[【**Ccww技术博客**】](#公众号)，原创技术文章第一时间推出  ，并且获取更多资料和视频
-![img](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/data/javabase/公共号二维码.png)
+![](https://oscimg.oschina.net/oscnet/up-85f14b48ced93a26e459dcab1be2e4cb7db.png)
