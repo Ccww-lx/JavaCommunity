@@ -66,11 +66,13 @@
 + [面试：为了进阿里，死磕了ConcurrentHashMap源码和面试题(二)](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/collection/ConcurrentHashMap源码和面试题二.md)
 
 #### Java多线程与并发
-+ [面试：为了进阿里，又把并发CAS（Compare and Swap）实现重新精读一遍](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/threadbase.md)
-+ [Java并发之Synchronized](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/threadbase.md)
-+ [Java并发之Synchronized](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/threadbase.md)
-+ [Java并发之Synchronized](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/threadbase.md)
 + [面试：多线程与并发基础](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/threadbase.md)
++ [面试：为了进阿里，又把并发CAS（Compare and Swap）实现重新精读一遍](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/并发CAS.md)
++ [面试：Java并发之Synchronized](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/Synchronized.md)
++ [面试：Volatile与Synchronized分析](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/Volatile与Synchronized.md)
++ [面试：Java多线程与并发之ThreadLocal](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/Java多线程与并发之ThreadLocal.md)
++ [面试：ThreadLocal内存泄露分析以及如何避免](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/ThreadLocal的内存泄露的原因分析以及如何避免.md)
+
 
 #### JVM虚拟机
 + [《面试知识，工作可待篇-JVM内存篇》](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/jvm/jvmbase.md  )
