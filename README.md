@@ -72,7 +72,7 @@
 + [面试：Volatile与Synchronized分析](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/Volatile与Synchronized.md)
 + [面试：Java多线程与并发之ThreadLocal](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/Java多线程与并发之ThreadLocal.md)
 + [面试：ThreadLocal内存泄露分析以及如何避免](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/ThreadLocal的内存泄露的原因分析以及如何避免.md)
-
++ [面试：为了进阿里，需要深入理解ReentrantLock原理](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/thread/ReentrantLock原理.md)
 
 #### JVM虚拟机
 + [《面试知识，工作可待篇-JVM内存篇》](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/jvm/jvmbase.md  )
@@ -80,8 +80,20 @@
 
 #### 设计模式
 
-+ [《面试知识，工作可待篇-设计模式篇》](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/designMode.md )
++ [《面试知识-设计模式篇》](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/designMode.md )
++ [面试：对于单例模式面试官会怎样提问呢？你又该如何回答呢？](  https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/单例模式.md )
 
+### ORM框架
+
+####  Mybatis
+
++ [MyBatis常见面试题](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/orm/MyBatis常见面试题.md)
++ [MyBatis面试题分析导读-架构以及核心内容](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/orm/MyBatis架构以及核心内容.md)
++ [面试：面试官有没有在Mybatis执行过程上为过难你呢？看完就不再怂（图文解析）](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/orm/Mybatis执行过程.md)
+
+#### Hibernate
+
++ 《面试知识，工作可待篇-Hibernate篇》
 ### Spring全家桶
 
 #### Spring精选面试题
@@ -112,15 +124,6 @@
 + [《面试知识，工作可待篇-redis篇》]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/base/javabase.md )
 + [《面试知识，工作可待篇-MongoDB篇》]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/base/javabase.md )
 
-### ORM框架
-
-####  Mybatis
-
-+ 《面试知识，工作可待篇-Mybatis篇》
-
-#### Hibernate
-
-+ 《面试知识，工作可待篇-Hibernate篇》
 
 ### 消息队列
 
