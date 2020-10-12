@@ -94,6 +94,25 @@
 #### Hibernate
 
 + 《面试知识，工作可待篇-Hibernate篇》
+
+###数据库
+#### SQL数据库
+
++ 面试：MySQL经典的面试题
++ 面试：谈谈你对分库分表的理解
+
+#### NoSQL数据库
+##### redis
++ [面试：原来Redis常用的五种数据类型底层结构是这样的]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/redis/Redis常用的五种数据类型底层结构.md )
++ [当遇到美女面试官之如何理解Redis的Expire Key(过期键)](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/redis/Redis的ExpireKey(过期键).md)
++ [面试：简明的图解Redis RDB持久化、AOF持久化](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/redis/RedisRDB持久化与AOF持久化.md)
+##### mongodb
++ [面试:快2020年了，赶紧收藏起MongoDB面试题轻松面对BAT灵魂式的拷问]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/mongodb/MongoDB面试题.md )
++ [MongoDB--Spring Data MongoDB详细的操作手册（增删改查）]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/mongodb/SpringDataMongoDB详细的操作手册.md )
++ [MongoDB系列--深入理解MongoDB聚合（Aggregation ）]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/mongodb/MongoDB聚合.md )
++ [MongoDB系列--轻松应对面试中遇到的MongonDB索引(index)问题]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/mongodb/MongonDB索引.md )
++ [MongoDB系列-在复制集(replication)以及分片(Shard)中创建索引]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/mongodb/复制集(replication).md )
++ [MongoDB系列-复制集(Replica Set)应用部署(生产、测试、开发环境)]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/mongodb/复制集(ReplicaSet)应用部署.md )
 ### Spring全家桶
 
 #### Spring精选面试题
@@ -112,17 +131,6 @@
 
 + 《面试知识，工作可待篇-SpringCloud篇》
 
-### 数据库
-
-#### SQL数据库
-
-+ 《面试知识，工作可待篇-MySQL篇》
-+ 《面试知识，工作可待篇-分库分表篇》
-
-#### NoSQL数据库
-
-+ [《面试知识，工作可待篇-redis篇》]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/base/javabase.md )
-+ [《面试知识，工作可待篇-MongoDB篇》]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/base/javabase.md )
 
 
 ### 消息队列
