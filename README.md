@@ -91,15 +91,13 @@
 + [MyBatis面试题分析导读-架构以及核心内容](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/orm/MyBatis架构以及核心内容.md)
 + [面试：面试官有没有在Mybatis执行过程上为过难你呢？看完就不再怂（图文解析）](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/orm/Mybatis执行过程.md)
 
-#### Hibernate
 
-+ 《面试知识，工作可待篇-Hibernate篇》
-
-###数据库
+### 数据库
 #### SQL数据库
-
-+ 面试：MySQL经典的面试题
++ [理解完这些基本上能解决面试中MySql的事务问题](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/sql/mysql/mysql事务.md)
 + 面试：谈谈你对分库分表的理解
++ 面试：MySQL经典的面试题
+
 
 #### NoSQL数据库
 ##### redis
@@ -115,7 +113,7 @@
 + [MongoDB系列-复制集(Replica Set)应用部署(生产、测试、开发环境)]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/mongodb/复制集(ReplicaSet)应用部署.md )
 ### Spring全家桶
 
-#### Spring精选面试题
+#### Spring
 
 + 《面试知识，工作可待篇-Spring篇》
 
