@@ -95,7 +95,7 @@
 ### 数据库
 #### SQL数据库
 + [理解完这些基本上能解决面试中MySql的事务问题](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/sql/mysql/mysql事务.md)
-+[在MySQL查询性能优化前，必须先掌握MySQL索引理论]()
++ [MySQL查询性能优化前，必须先掌握MySQL索引理论]()
 面试：谈谈你对分库分表的理解
 + 面试：MySQL经典的面试题
 
