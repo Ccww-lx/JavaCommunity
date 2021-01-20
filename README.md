@@ -89,15 +89,16 @@
 
 + [MyBatis常见面试题](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/orm/MyBatis常见面试题.md)
 + [MyBatis面试题分析导读-架构以及核心内容](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/orm/MyBatis架构以及核心内容.md)
++ [面试：你知道MyBatis执行过程之初始化是如何执行的吗？](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/orm/Mybatis初始化执行过程.md)
 + [面试：面试官有没有在Mybatis执行过程上为过难你呢？看完就不再怂（图文解析）](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/orm/Mybatis执行过程.md)
 
 
 ### 数据库
 #### SQL数据库
 + [理解完这些基本上能解决面试中MySql的事务问题](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/sql/mysql/mysql事务.md)
-+ [MySQL查询性能优化前，必须先掌握MySQL索引理论]()
-面试：谈谈你对分库分表的理解
-+ 面试：MySQL经典的面试题
++ [MySQL查询性能优化前，必须先掌握MySQL索引理论](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/sql/mysql/mysql索引.md)
++ [面试：谈谈你对分库分表的理解]()
++ [面试：MySQL经典的面试题]()
 
 
 #### NoSQL数据库
@@ -105,6 +106,8 @@
 + [面试：原来Redis常用的五种数据类型底层结构是这样的]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/redis/Redis常用的五种数据类型底层结构.md )
 + [当遇到美女面试官之如何理解Redis的Expire Key(过期键)](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/redis/Redis的ExpireKey(过期键).md)
 + [面试：简明的图解Redis RDB持久化、AOF持久化](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/redis/RedisRDB持久化与AOF持久化.md)
++ [Redis缓存总结：淘汰机制、缓存雪崩、数据不一致...](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/redis/Redis缓存总结.md)
++ [面试：Redis为什么快呢？查询为何会变慢呢？](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/redis/Redis为什么快呢.md)
 ##### mongodb
 + [面试:快2020年了，赶紧收藏起MongoDB面试题轻松面对BAT灵魂式的拷问]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/mongodb/MongoDB面试题.md )
 + [MongoDB--Spring Data MongoDB详细的操作手册（增删改查）]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/mongodb/SpringDataMongoDB详细的操作手册.md )
@@ -112,32 +115,30 @@
 + [MongoDB系列--轻松应对面试中遇到的MongonDB索引(index)问题]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/mongodb/MongonDB索引.md )
 + [MongoDB系列-在复制集(replication)以及分片(Shard)中创建索引]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/mongodb/复制集(replication).md )
 + [MongoDB系列-复制集(Replica Set)应用部署(生产、测试、开发环境)]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/db/mongodb/复制集(ReplicaSet)应用部署.md )
+
+### 消息队列
++ [为什么要使用MQ消息中间件]( https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/mq/为什么要使用MQ消息中间件.md) 
++ [面试：RocketMQ架构原理](https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/mq/RocketMQ入门手册.md)
 ### Spring全家桶
 
 #### Spring
 
-+ 《面试知识，工作可待篇-Spring篇》
++ [面试：Spring IOC]()
++ [面试：Spring AOP]()
++ [面试：Spring 循环依赖]()
+
+#### SpringBoot精选面试题
+
++ [面试：@SpringBootApplication注解源码解析过程]((https://github.com/Ccww-lx/Ccww-lx.github.io/blob/master/doc/javabase/springboot/@SpringBootApplication注解源码解析.md)) 
 
 #### SpringMVC精选面试题
 
 + 《面试知识，工作可待篇-Spring MVC篇》
 
-#### SpringBoot精选面试题
-
-+ 《面试知识，工作可待篇-Spring Boot篇》
-
 #### SpringCloud精选面试题
 
 + 《面试知识，工作可待篇-SpringCloud篇》
 
-
-
-### 消息队列
-
-+ 《面试知识，工作可待篇-消息队列知识篇》
-+ 《面试知识，工作可待篇-RocketMQ篇》
-+ 《面试知识，工作可待篇-Kafka篇》
-+ 《面试知识，工作可待篇-RabbitMQ篇》
 
 ### 缓存
 
@@ -229,4 +230,4 @@
 ## 公众号
 
 欢迎关注微信公众号[【**Ccww技术博客**】](#公众号)，原创技术文章第一时间推出  ，并且获取更多资料和视频
-![](https://oscimg.oschina.net/oscnet/up-85f14b48ced93a26e459dcab1be2e4cb7db.png)
+![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAyMC80LzE0LzE3MTc5MjY5MGIxOWUwYjg?x-oss-process=image/format,png)
